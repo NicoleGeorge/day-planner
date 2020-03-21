@@ -1,0 +1,68 @@
+/* BASE STYLES */
+
+body {
+    background-image: url('../img/abstract-art-background-1020317\ copy.jpg');
+    font-family: ;
+    font-size: 18px;
+    padding-top: 90px;
+    vertical-align: middle;
+}
+
+/* NAV BAR STYLES */
+
+.navbar {
+    background-color: #EEC8B9;
+    color: #EBB122;
+    padding-bottom: 0;
+    border-bottom: solid;
+    border-bottom-color: #7c3f0a;
+    width: 100%;
+    text-align: center;
+}
+
+#navbar-title {
+    padding: 0px;
+    font-size: 30px;
+    color: #E95E22 !important;
+    text-align: center;
+}
+
+  
+/* PLANNER STYLES */
+
+
+/* SAVE BOX STYLES */
+
+.saveIcon {
+    background-color: #EEC8B9;
+    color: #E95E22;
+    border-radius: 0px;
+    font-size: 12px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.saveIcon:hover {
+    background-color: #EBB122;
+    color:white;
+}
+
+/* FOOTER STYLES */
+
+.footer {
+    background-color: #EEC8B9;
+    color: #E95E22 !important;
+    height: 45px;
+    border-top: solid;
+    border-top-color:  #7c3f0a;
+    border-top-width: 2px;
+}
+
+.footer-text, .header-text {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: #EBB122;
+    padding-bottom: 15px;
+}
