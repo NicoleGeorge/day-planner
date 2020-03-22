@@ -12,12 +12,10 @@ $(document).ready(function() {
     dateHeading.text(currentTime);
 
 // SAVE button - using font awesome icon https://fontawesome.com/license
-  const saveIcon = "./img/save-regular.svg";
+    var saveIcon = "./img/save-regular.svg";
 
   
 // formatting the hous for display
-
-
 
 
 // validation needed - test for after hours 
