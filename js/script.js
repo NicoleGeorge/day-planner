@@ -76,7 +76,7 @@ $(document).ready(function() {
 
     var $saveBtn = $('<i>');
     $saveBtn.attr('id',`saveid-${index}`);
-    $saveBtn.attr('save-id',index);
+    $saveBtn.attr('save-id', index);
     $saveBtn.attr('class',"far fa-save saveIcon");
     
     // added col width and button output section to the row
@@ -95,22 +95,59 @@ $(document).ready(function() {
   // function(): made to update row color based on time
   function updateRowColor ($hourRow,hour) { 
 
-    if (test) { console.log("rowColor ",nowHour24, hour); }
+    if (test) { console.log("rowColor ", nowHour24, hour); }
 
     if ( hour < nowHour24) {
       // $hourRow.css('')
       if (test) { console.log("lessThan"); }
-      $hourRow.css("background-color","lightgrey")
+      $hourRow.css("background-color", "lightgrey")
     } 
     else if ( hour > nowHour24) {
-      if (test) { console.log("greaterthan"); }
-      $hourRow.css("background-color","lightgreen")
+      if (test) 
+      $hourRow.css("background-color", "lightgreen")
     } 
     else {
-      if (test) { console.log("equal"); }
-      $hourRow.css("background-color","tomato")
+      if (test) 
+      $hourRow.css("background-color", "tomato")
     }
   };
 
-    console.log(test);
+  // START: local storage section
+  // onclick function to listen for user clicks on planning scheduler area
+  $(document).on('click', 'i', function(event) {
+    event.preventDefault();  
+
+    if (test) //{ console.log('click pta before ' + planTextArr); }
+
+    var $index = $(this).attr('save-id');
+
+    var inputId = '#input-'+ $index;
+    var $value = $(inputId).val();
+
+    planTextArr[$index] = $value;
+
+    if (test) //{ console.log('value ', $value); }
+    if (test) //{ console.log('index ', $index); }
+    if (test) //{ console.log('click pta after ' + planTextArr); }
+
+    // remove shawdow pulse class
+    $(`#saveid-${$index}`).removeClass('shadowPulse');
+    localStorage.setItem("storedPlans", JSON.stringify(planTextArr));
+  });  
+  
+  // color change function of save button when text is added
+  $(document).on('change', 'input', function(event) {
+    event.preventDefault();  
+    if (test) //{ console.log('onChange'); }
+    if (test) //{ console.log('id', $(this).attr('hour-index')); }
+
+    // neeed to check for save button
+
+    var i = $(this).attr('hour-index');
+
+    // add shawdow pulse class
+    $(`#saveid-${i}`).addClass('shadowPulse');
+  });
+
+    // console.log(test);
 });
