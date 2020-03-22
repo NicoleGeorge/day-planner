@@ -40,9 +40,7 @@ h2 {
 }
  
 #navbar-subtitle {
-    border-bottom: #E95E22;
-    border-bottom-style: solid;
-    border-bottom-width: 20px;
+    /* working on creating a bottom border that sits behind the date by about 10/15px */
 }
 
 /* PLANNER STYLES */
