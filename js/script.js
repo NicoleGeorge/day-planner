@@ -22,7 +22,7 @@ $(document).ready(function() {
   // using font awesome icon https://fontawesome.com/license
   var saveIcon = "./images/save-regular.svg"; 
 
-// Get stored todos from localStorage
+  // Get stored todos from localStorage
   // Parsing the JSON string to an object
   var storedPlans = JSON.parse(localStorage.getItem("storedPlans"));
 
@@ -33,8 +33,8 @@ $(document).ready(function() {
     planTextArr = storedPlans;
   } 
   else {
-    // this should only occur on first time the app is loaded in the browser
-    // prompts for the user 
+
+    // prompts for the user with important info :)
     planTextArr = new Array(9);
     planTextArr[4] = "LUNCH TIME!!";
     planTextArr[7] = "one hour before home time!"
@@ -42,7 +42,8 @@ $(document).ready(function() {
 
   if (test) { console.log("full array of plned text",planTextArr); }
 
-  // set variable referencing planner element
+   //creating the row components for the calendar
+  // setting variables re planner element
   var $plannerDiv = $('#plannerContainer');
   // clear existing elements
   $plannerDiv.empty();
@@ -55,7 +56,7 @@ $(document).ready(function() {
     // index for array use offset from hour
     var index = hour - 9;
     
-    //creating the row components for the calendar
+
     // starting with the timeField
 
     // START: making the time field section
