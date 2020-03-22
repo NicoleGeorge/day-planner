@@ -20,8 +20,34 @@ $(document).ready(function() {
   $dateHeading.text(now);
   
   // using font awesome icon https://fontawesome.com/license
-
   var saveIcon = "./images/save-regular.svg"; 
+
+// Get stored todos from localStorage
+  // Parsing the JSON string to an object
+  var storedPlans = JSON.parse(localStorage.getItem("storedPlans"));
+
+  if (test) {console.log(storedPlans); }
+
+  // If plans were retrieved from localStorage, update the plan array to it
+  if (storedPlans !== null) {
+    planTextArr = storedPlans;
+  } 
+  else {
+    // this should only occur on first time the app is loaded in the browser
+    // prompts for the user 
+    planTextArr = new Array(9);
+    planTextArr[4] = "LUNCH TIME!!";
+    planTextArr[7] = "one hour before home time!"
+  }
+
+  if (test) { console.log("full array of plned text",planTextArr); }
+
+  // set variable referencing planner element
+  var $plannerDiv = $('#plannerContainer');
+  // clear existing elements
+  $plannerDiv.empty();
+
+  if (test) { console.log("current time",nowHour12); }
 
   // creating the day planner by row for set workplace hours
 
@@ -69,6 +95,25 @@ $(document).ready(function() {
     
     // END: timeField section done
 
+    // START: creating the scheduler inputs section
+
+    var $dailyPlanSpn = $('<input>');
+
+    $dailyPlanSpn.attr('id',`input-${index}`);
+    $dailyPlanSpn.attr('hour-index',index);
+    $dailyPlanSpn.attr('type','text');
+    $dailyPlanSpn.attr('class','dailyPlan');
+
+    // accessing index from data array for hour 
+    $dailyPlanSpn.val( planTextArr[index] );
+    
+    // create col-md-9 to set the width
+    var $col9IptDiv = $('<div>');
+    $col9IptDiv.addClass('col-md-9');
+
+    // adding col width and row component to schedule input section of the row
+    $rowDiv.append($col9IptDiv);
+    $col9IptDiv.append($dailyPlanSpn);
 
     // START: creating the save button section
     var $col1SaveDiv = $('<div>');
@@ -89,7 +134,7 @@ $(document).ready(function() {
     updateRowColor($rowDiv, hour);
     
     // adding the newly created row, with the 3 sections, to the planner container
-    // $plannerDiv.append($rowDiv);
+      $plannerDiv.append($rowDiv);
   };
 
   // function(): made to update row color based on time

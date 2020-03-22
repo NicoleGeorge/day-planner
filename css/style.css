@@ -13,7 +13,7 @@ h2 {
     font-size: 22px;
     text-transform: uppercase;
     margin: 25px 0;
-    font-weight: 700;
+    font-weight: 700; 
     line-height: 20px;
 }
 
@@ -39,6 +39,12 @@ h2 {
     margin-top: 20px;
 }
  
+#navbar-subtitle {
+    border-bottom: #E95E22;
+    border-bottom-style: solid;
+    border-bottom-width: 20px;
+}
+
 /* PLANNER STYLES */
 
 .col-md-2 {
@@ -80,13 +86,14 @@ h2 {
 input {
     background: #dbe6eb;
     border: none;
-    padding-left: 3px;
+    padding-left: 12px;
 }
 
 /* TIME FIELD STYLES */
 
 .timeField{
     background-color:#EBB122;  
+    text-transform: uppercase;
     color: #7c3f0a;
     height:100%;
     width: 100%;
@@ -94,7 +101,7 @@ input {
     border-radius: 0;
     display: inline-block;
     font-size: 14px;
-    padding-top: 20px; /* change tp 5px when doing @media responsive */
+    padding-top: 20px; 
   }
 
 /* SAVE BOX STYLES */
@@ -136,6 +143,7 @@ input {
     width: 100%;
     text-align: center;
     font-size: 16px;
+    font-weight: 500;
     color: #EBB122;
     padding-bottom: 15px;
 }
