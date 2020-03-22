@@ -54,7 +54,8 @@ $(document).ready(function() {
     if (hour > 12) { 
       displayHour = hour - 12;
       ampm = "pm";
-    } else {
+    } 
+    else {
       displayHour = hour;
       ampm = "am";
     }
@@ -67,6 +68,49 @@ $(document).ready(function() {
     $col2TimeDiv.append($timeBoxSpn);
     
     // END: timeField section done
-  }
-    console.log(displayHour);
+
+
+    // START: creating the save button section
+    var $col1SaveDiv = $('<div>');
+    $col1SaveDiv.addClass('col-md-1');
+
+    var $saveBtn = $('<i>');
+    $saveBtn.attr('id',`saveid-${index}`);
+    $saveBtn.attr('save-id',index);
+    $saveBtn.attr('class',"far fa-save saveIcon");
+    
+    // added col width and button output section to the row
+
+    $rowDiv.append($col1SaveDiv);
+    $col1SaveDiv.append($saveBtn);
+    // END: completed the save button section
+
+    // set row color based on time
+    updateRowColor($rowDiv, hour);
+    
+    // adding the newly created row, with the 3 sections, to the planner container
+    // $plannerDiv.append($rowDiv);
+  };
+
+  // function(): made to update row color based on time
+  function updateRowColor ($hourRow,hour) { 
+
+    if (test) { console.log("rowColor ",nowHour24, hour); }
+
+    if ( hour < nowHour24) {
+      // $hourRow.css('')
+      if (test) { console.log("lessThan"); }
+      $hourRow.css("background-color","lightgrey")
+    } 
+    else if ( hour > nowHour24) {
+      if (test) { console.log("greaterthan"); }
+      $hourRow.css("background-color","lightgreen")
+    } 
+    else {
+      if (test) { console.log("equal"); }
+      $hourRow.css("background-color","tomato")
+    }
+  };
+
+    console.log(test);
 });
