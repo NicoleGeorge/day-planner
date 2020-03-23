@@ -20,7 +20,7 @@ $(document).ready(function() {
   $dateHeading.text(now);
   
   // using font awesome icon https://fontawesome.com/license
-  var saveIcon = "./images/save-regular.svg"; 
+  var saveIcon = ".img/save-regular.svg"; 
 
   // Get stored todos from localStorage
   // Parsing the JSON string to an object
@@ -28,7 +28,7 @@ $(document).ready(function() {
 
   if (test) {console.log(storedPlans); }
 
-  // If plans were retrieved from localStorage, update the plan array to it
+  // Once plans are retrieved from localStorage, update the plan array
   if (storedPlans !== null) {
     planTextArr = storedPlans;
   } 
@@ -37,7 +37,6 @@ $(document).ready(function() {
     // prompts for the user with important info :)
     planTextArr = new Array(9);
     planTextArr[4] = "LUNCH TIME!!";
-    planTextArr[7] = "one hour before home time!"
   }
 
   if (test) { console.log("full array of plned text",planTextArr); }
@@ -59,7 +58,7 @@ $(document).ready(function() {
 
     // starting with the timeField
 
-    // START: making the time field section
+    // START: making the container section
 
     var $rowDiv = $('<div>');
     $rowDiv.addClass('row');
@@ -72,7 +71,6 @@ $(document).ready(function() {
   
     // create timeField element
     var $timeBoxSpn = $('<span>');
-    // can use this to get value
     $timeBoxSpn.attr('class','timeField');
     
     // formatting hours for display
@@ -144,7 +142,6 @@ $(document).ready(function() {
     if (test) { console.log("rowColor ", nowHour24, hour); }
 
     if ( hour < nowHour24) {
-      // $hourRow.css('')
       if (test) { console.log("lessThan"); }
       $hourRow.css("background-color", "lightgrey")
     } 
@@ -160,10 +157,10 @@ $(document).ready(function() {
 
   // START: local storage section
   // onclick function to listen for user clicks on planning scheduler area
-  $(document).on('click', 'i', function(event) {
-    event.preventDefault();  
+  $(document).on('click', 'i', function(e) {
+    e.preventDefault();  
 
-    if (test) //{ console.log('click pta before ' + planTextArr); }
+    if (test) { console.log('click pta before ' + planTextArr); }
 
     var $index = $(this).attr('save-id');
 
