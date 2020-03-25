@@ -1,7 +1,5 @@
 Workday Planner App:
 
-[Moodboard](https://github.com/NicoleGeorge/workday-planner/blob/master/assets/Day%20Planner%20-%20Style%20Guide.png)
-
 [View Planner](https://nicolegeorge.github.io/workday-planner/)
 
 Brief:
@@ -12,6 +10,8 @@ You'll need to use the Moment.js library to work with date and time. Be sure to 
 Objective:
 An employee, with a busy schedule, needs to be able to add important events to a daily workday planner, enabling them to manage their time effectively.
 
+Design:
+[Moodboard](https://github.com/NicoleGeorge/workday-planner/blob/master/assets/Day%20Planner%20-%20Style%20Guide.png)
 
 App Functionality:
 - When the user opens the app, the current day and date will appear in the header
@@ -30,7 +30,7 @@ Moment.js
 
 
 Final Screenshots:
+[View Presentation: pdf](https://github.com/NicoleGeorge/workday-planner/blob/master/assets/Workday%20Planner%20App_%20Presentation.pdf)
 
-[View Presentation](https://github.com/NicoleGeorge/workday-planner/blob/master/assets/Workday%20Planner%20App_%20Presentation.pdf)
-
+[View Presentation: online](https://www.canva.com/design/DAD3jAFRK8U/cNJKJFu7mjbembNHk449Kg/view?utm_content=DAD3jAFRK8U&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
 
