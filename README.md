@@ -1,8 +1,8 @@
 Workday Planner App:
 
-[Moodboard]
-[View Presentation:]
-[View Planner:](https://nicolegeorge.github.io/workday-planner/)
+[Moodboard](https://github.com/NicoleGeorge/workday-planner/blob/master/assets/Day%20Planner%20-%20Style%20Guide.png)
+
+[View Planner](https://nicolegeorge.github.io/workday-planner/)
 
 Brief:
 Create a simple calendar application that allows the user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
@@ -31,5 +31,6 @@ Moment.js
 
 Final Screenshots:
 
+[View Presentation](https://github.com/NicoleGeorge/workday-planner/blob/master/assets/Workday%20Planner%20App_%20Presentation.pdf)
 
 
