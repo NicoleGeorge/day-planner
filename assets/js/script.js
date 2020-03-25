@@ -169,9 +169,9 @@ $(document).ready(function() {
 
     planTextArr[$index] = $value;
 
-    if (test) //{ console.log('value ', $value); }
-    if (test) //{ console.log('index ', $index); }
-    if (test) //{ console.log('click pta after ' + planTextArr); }
+    if (test) { console.log('value ', $value); }
+    if (test) { console.log('index ', $index); }
+    if (test) { console.log('click pta after ' + planTextArr); }
 
     // remove shawdow pulse class
     $(`#saveid-${$index}`).removeClass('shadowPulse');
@@ -181,8 +181,8 @@ $(document).ready(function() {
   // color change function of save button when text is added
   $(document).on('change', 'input', function(event) {
     event.preventDefault();  
-    if (test) //{ console.log('onChange'); }
-    if (test) //{ console.log('id', $(this).attr('hour-index')); }
+    if (test) { console.log('onChange'); }
+    if (test) { console.log('id', $(this).attr('hour-index')); }
 
     // neeed to check for save button
 
