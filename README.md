@@ -29,8 +29,9 @@ JQuery
 Moment.js
 
 
-Final Screenshots:
+Final Screenshots:<br>
+[View Presentation: online](https://www.canva.com/design/DAD3jAFRK8U/cNJKJFu7mjbembNHk449Kg/view?utm_content=DAD3jAFRK8U&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
 [View Presentation: pdf](https://github.com/NicoleGeorge/workday-planner/blob/master/assets/Workday%20Planner%20App_%20Presentation.pdf)
 
-[View Presentation: online](https://www.canva.com/design/DAD3jAFRK8U/cNJKJFu7mjbembNHk449Kg/view?utm_content=DAD3jAFRK8U&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
+
 
