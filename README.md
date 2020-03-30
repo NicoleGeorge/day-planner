@@ -35,7 +35,7 @@ Final Screenshots:<br>
 [View Presentation: pdf](https://github.com/NicoleGeorge/workday-planner/blob/master/assets/Workday%20Planner%20App_%20Presentation.pdf)
 
 Attribution:
-[main code reference](https://github.com/gabepettus/DayPlanner/blob/master/script.js)
+[main JS code reference](https://github.com/gabepettus/DayPlanner/blob/master/script.js)
 
 Tutorials undertaken to understand code reference; <br>
 [API connectivity & ES6 code optimasation](https://www.skillshare.com/classes/Learn-HTML-CSS-JavaScriptjQuery-and-APIs-Build-a-Weather-Site/428313588/projects?via=logged-in-home-your-classes) <br>
