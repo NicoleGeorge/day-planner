@@ -34,5 +34,13 @@ Final Screenshots:<br>
 
 [View Presentation: pdf](https://github.com/NicoleGeorge/workday-planner/blob/master/assets/Workday%20Planner%20App_%20Presentation.pdf)
 
+Attribution:
+[main code reference](https://github.com/gabepettus/DayPlanner/blob/master/script.js)
 
+Tutorials undertaken to understand code reference;
+[API connectivity & ES6 code optimasation] (skillshare.com)
+[Jacascript project tutorials](https://www.udemy.com/course/modern-javascript-the-complete-course-build-10-projects/learn/lecture/9211340#overview)
+[moment.js functionality] (https://www.youtube.com/watch?v=n80RRNS1k64&list=PLVvjrrRCBy2LWFkR7opQxWp4z0en6OHgw)
+[change background based on time](https://stackoverflow.com/questions/59995703/trying-to-change-background-color-based-off-if-the-hour-is-in-the-past-current)
+[working with browser events](https://classroom.udacity.com/nanodegrees/nd0011/parts/68c70b08-c36e-4c48-97af-c84d77ddef5e/modules/f7eca45d-0cca-481f-a280-a835629b4be4/lessons/f270dbcf-eb43-4ce3-b7be-a74d26023496/concepts/5fdd280f-9bf8-4c13-b544-24cd9a4fb63e)
 
